@@ -8,13 +8,17 @@ ini_set('display_errors', '1')
 </body>
 
 <?php
-	$reqcount = count($_REQUEST);
-	echo count($_REQUEST);
+
 	
 	foreach($_REQUEST as $key =>$value)
 	{
+	echo "<p>";
 	echo 'Key = ' .$key.'<br />';
 	echo 'Value= ' .$value;
+	echo "JSON code below"
+	$jsoncode = json_encode($_REQUEST);
+	echo $jsoncode;
+	echo "</p>";
 	}
 
 /*

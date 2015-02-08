@@ -1,3 +1,39 @@
+commit fbb13a4d67c6d867c49c0b9ca9055767272cb5ca
+Author: Danish Iqbal <iqbald@flip1.engr.oregonstate.edu>
+Date:   Fri Feb 6 13:13:41 2015 -0800
+
+    fixed login fi so session visit works
+
+commit 1504da0f6f84aa525b95423ee90d262227f82e92
+Author: Danish Iqbal <iqbald@flip1.engr.oregonstate.edu>
+Date:   Fri Feb 6 07:36:47 2015 -0800
+
+    Added login files but cant get session counter to work
+
+commit 24b46e0105c1ca2ac99c52b63adf939bec6a3692
+Author: Danish Iqbal <iqbald@flip3.engr.oregonstate.edu>
+Date:   Thu Feb 5 14:24:06 2015 -0800
+
+    First draft of loopback done w/o JSON however
+
+commit 08420abaefcbb05786878a38b853670c748bbdd2
+Author: Danish Iqbal <iqbald@flip3.engr.oregonstate.edu>
+Date:   Thu Feb 5 11:38:21 2015 -0800
+
+    completed table,but multiplication is a bit off
+
+commit 5918e6891df89c96f8333ee9ee067a2ad2f1b0ed
+Author: Danish Iqbal <iqbald@flip3.engr.oregonstate.edu>
+Date:   Thu Feb 5 09:16:20 2015 -0800
+
+    added src folder and log file
+
+commit 22f1c70e021236b62af6b0870b1a2cea75101c93
+Author: orst-iqbald <iqbald@onid.oregonstate.edu>
+Date:   Thu Feb 5 09:31:16 2015 -0500
+
+    Initial commit
+
 Start: Thur, 5 Feb 2015 21:42:26 -0800
 End: Thur, 5 Feb 2015 22:42:26 -0800
 Tasks: Started assignemnt by makign html form

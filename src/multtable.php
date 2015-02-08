@@ -1,17 +1,18 @@
 <?php
 ini_set('display_errors', '1')
 ?>
+<!DOCTYPE html>
 <html>
 <head>
         <title> Multtable File </title>
 </head>
 
-<form action="" method="post">
+<form action="multtable.php" method="POST">
 <p> min-multiplicand </p> <input type="number" name="min-multiplicand"/>
 <p> max-multiplicand </p> <input type="number" name="max-multiplicand"/>
 <p> min-multiplier </p> <input type="number" name="min-multiplier"/>
 <p> max-multiplier </p> <input type="number" name="max-multiplier"/>
-<p><input type = "submit" value="Submit"></p>
+<p><input type = "submit" name="submit0" value="Submit"></p>
 </form>
 
 
@@ -21,6 +22,8 @@ $minmultiplicand = $_POST['min-multiplicand'];
 $maxmultiplicand = $_POST['max-multiplicand'];
 $minmultiplier = $_POST['min-multiplier']; 
 $maxmultiplier = $_POST['max-multiplier'];
+
+
 
 if($minmultiplicand>=$maxmultiplicand)
   echo "miminum larger than max";
@@ -32,22 +35,25 @@ if($minmultiplier>=$maxmultiplier)
 else
   echo '1';
 
-if(is_numeric($minmultiplicand))
-  echo "an integer";
 
 $row = $maxmultiplicand-$minmultiplicand +2;
 $column = $maxmultiplier - $minmultiplier +2;
 
-echo "<table border='0'>";
-  for($i=0; $i<$row; $i++){
+$i=$minmultiplicand;
+$j=$minmultiplier;
+
+
+echo "<table border='1'>";
+  while( $i<($maxmultiplicand+2)){
     echo "<tr>";
-      for($j=0; $j<$column; $j++){
-	  $result = $minmultiplicand*$minmultiplier;
+    $j=$minmultiplier;
+      while( $j<($maxmultiplier+2)){
+	  $result = $i*$j;
           echo "<td>".$result."</td>";        
-      $minmultiplier=$minmultiplier+1;	
+      	  $j++;	
       }
-    $minmultiplicand = $minmultiplicand+1;
     echo "</tr>";
+    $i++;
   }
 echo "</table>";
 

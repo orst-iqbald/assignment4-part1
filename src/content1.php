@@ -10,6 +10,12 @@ if(session_status() == PHP_SESSION_ACTIVE)
 //	header("Location:login.php");
 //	session_destroy();
 	}
+        if($_POST['username'] == NULL && $_SERVER['HTTP_REFERER'] != "Location:login.php")
+	{
+	header("Location:login.php");
+	}
+  
+
 } 
   
 if(isset($_POST['username']))
@@ -21,9 +27,9 @@ if($_POST['username'] != NULL){
      	if (isset($_SESSION['username'])) {
                 echo "Hello " . $_SESSION['username']. " You have visited " . $_SESSION ["visits"]. " times! Click to <a href=content2.php> logout </a>"; 
 	}
-	if($_SESSION['username'] == NULL && $_SESSION['visits']>1){
-		header ("Location:login.php");
-	}
+//	if($_SESSION['username'] == NULL && $_SESSION['visits']>1){
+//		header ("Location:login.php");
+//	}
 }
 	
 ?>      
